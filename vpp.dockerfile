@@ -5,7 +5,7 @@ RUN apt-get update \
  && apt-get -y install vim \
    git \
    build-essential \
-   linux-headers-`uname -r` \
+   linux-headers-3.16.0-4-amd64 \
    gcc \
    make \
    linux-headers-`uname -r` \
