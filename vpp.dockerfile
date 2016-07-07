@@ -8,7 +8,6 @@ RUN apt-get update \
    linux-headers-3.16.0-4-amd64 \
    gcc \
    make \
-   linux-headers-`uname -r` \
  && git clone https://gerrit.fd.io/r/vpp \
  && cd vpp
 RUN make install-dep
