@@ -9,7 +9,7 @@ RUN apt-get update \
    gcc \
    make \
  && git clone https://gerrit.fd.io/r/vpp \
- && cd vpp
-RUN make install-dep
-RUN make bootstrap
-RUN make build
+ && cd vpp \
+ && make install-dep \
+ && make bootstrap \
+ && make build
